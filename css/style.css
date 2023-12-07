@@ -1,0 +1,173 @@
+/* ＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊ */
+/* 共通部分 */
+
+/* ボタンは全てこの仕様 */
+.linkBtn { 
+  background-color: black;
+  color: white;
+}
+
+.linkBtn:hover {
+  background-color: gray;
+}
+
+
+.btn {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 120%;
+}
+
+
+/* 画像がゆっくり現れる、タスク表のボタンも。ボタンよりかは早く現れる */
+#logo,.taskTitle {
+  animation-name:fadeUpAnimeLogo;
+  animation-duration:3.0s;
+  animation-fill-mode:forwards;
+  opacity:0;
+}
+
+@keyframes fadeUpAnimeLogo{
+  from {
+    opacity: 0;
+  transform: translateY(100px);
+  }
+
+  to {
+    opacity: 1;
+  transform: translateY(0);
+  }
+}
+/* 画像がゆっくり現れる */
+
+/* ボタンがゆっくり現れる 上の画像とかよりも遅く現れる*/
+.linkBtn,.taskChoice,#nextLink {
+  animation-name:fadeUpAnimeLinkBtn;
+  animation-duration:4.5s;
+  animation-fill-mode:forwards;
+  opacity:0;
+}
+
+@keyframes fadeUpAnimeLinkBtn{
+  from {
+    opacity: 0;
+  transform: translateY(100px);
+  }
+
+  to {
+    opacity: 1;
+  transform: translateY(0);
+  }
+}
+
+/* ボタンがゆっくり現れる */
+
+
+
+/* ＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊ */
+/* トップ */
+#topBody{
+  background-color: rgb(217,217,217);
+}
+
+#logo {
+  text-align: center;
+  background-color: rgb(217,217,217);
+}
+
+
+
+
+
+.linkBtn{
+  width: 200px;
+  height: 50px;
+}
+
+#wrapLinkBtn{
+  padding: 10px;
+  text-align: center;
+}
+
+#wrapLink{
+  text-align: center;
+}
+
+
+
+
+/* ＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊ */
+/* タスクを登録するページ */
+
+/* タスク表の登録 */
+#taskBody{
+  background-color: rgb(217,217,217);
+}
+
+#title,.taskTitle {
+  font-weight: bold;
+  font-size: 25px;
+  text-align: center;
+  padding: 10px;
+  text-decoration: underline;
+}
+
+#nextLink{
+  color: blue;
+  padding: 10px;
+}
+
+.wrapNextLink{
+  text-align: center;
+}
+
+.taskChoice{
+  padding: 10px;
+  text-align: center;
+}
+
+#wrapTaskChoice{
+  text-align: center;
+}
+
+#topBack{
+  text-align: right;
+}
+
+.taskChoiceItem{
+  padding: 10px;
+}
+
+.halfTaskChoice{
+border-bottom: solid 3px #8EB8FF;
+}
+
+.wrapTaskChoiceItem{
+  text-align: left;
+  padding: 0 30px;
+  width: 250px;
+}
+
+/* 挙式や披露宴などなど各項目 */
+.taskChoiceWedding,.taskChoiceParty,.taskChoiceWelcome,.taskChoiceReception,.taskChoicePresent,.taskChoiceMoney,.taskChoiceInvitation{
+  display: flex;
+  justify-content: center;
+}
+
+
+/* ＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊ */
+/* タスクを確認するページ */
+
+/* タスク一覧 */
+#taskSbmitBody{
+  background-color: rgb(217,217,217);
+}
+
+
+
+
+
+
+
+
